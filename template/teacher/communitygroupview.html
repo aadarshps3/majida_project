@@ -23,7 +23,7 @@
                             <td class="py-1">{{ forloop.counter }}</td>
                             <td>{{ i.course }}</td>
                             <td>{{ i.department }}</td>
-                            <td><button class="btn btn-primary"  href="{% url 'communitygroupview' %}">join</button></td>
+                            <td><a type="submit" class="btn btn-primary"  href="{% url 'join_community' i.id %}">join</a></td>
 
 
 

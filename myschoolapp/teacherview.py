@@ -1,8 +1,9 @@
 from django.shortcuts import render, redirect
+from django.contrib import messages
 
 from myschoolapp.forms import teacherattendanceform, communitygroupform, studymaterial, markform
 from myschoolapp.models import StudentLogin, ParentLogin, StaffMeeting, Duty, TeacherAttendance, TeacherLogin, \
-    CommunityGroup, Syllabus, ExamTable, TimeTable, ParentsMeeting, StudyMaterial, Mark, ExamResult
+    CommunityGroup, Syllabus, ExamTable, TimeTable, ParentsMeeting, StudyMaterial, Mark, ExamResult,Appointment
 
 
 def studentview(request):
@@ -142,8 +143,29 @@ def texamresultview(request):
     data=ExamResult.objects.all()
     return render(request,'teacher/texamresultview.html',{'data':data})
 
+def join_community(request, id):
+    s = CommunityGroup.objects.get(id=id)
+    c = TeacherLogin.objects.get(user=request.user)
+    print(c)
+    appointment = Appointment.objects.filter(user=c, schedule=s)
+    if appointment.exists():
+        messages.info(request, 'You Have Already Requested Appointment for this Schedule')
+        return redirect('communitygroupview')
+    else:
+        if request.method == 'POST':
+            obj = Appointment()
+            obj.user = c
+            obj.schedule = s
+            obj.save()
+            messages.info(request, 'Appointment Booked Successfully')
+            return redirect('appointment_view')
+    return render(request, 'teacher/take_appointment.html', {'schedule': s})
 
 
 
+def appointment_view(request):
+    c = TeacherLogin.objects.get(user=request.user)
+    a = Appointment.objects.filter(user=c)
+    return render(request, 'teacher/appointment_view.html', {'appointment': a})
 
 

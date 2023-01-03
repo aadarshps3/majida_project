@@ -2,10 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e7b8b31-6575-4527-ad45-db0d73791504" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/template/admin/appointments.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/teacher/appointment_view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/teacher/take_appointment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myschoolapp/adminview.py" beforeDir="false" afterPath="$PROJECT_DIR$/myschoolapp/adminview.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myschoolapp/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/myschoolapp/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myschoolapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/myschoolapp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myschoolapp/teacherview.py" beforeDir="false" afterPath="$PROJECT_DIR$/myschoolapp/teacherview.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myschoolapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/myschoolapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/adindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/adindex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/teacher/communitygroupview.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/teacher/communitygroupview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/tindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/tindex.html" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,112 +35,6 @@
     </option>
     <expand />
     <select />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myschoolapp/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2873">
-              <caret line="170" column="11" selection-start-line="170" selection-start-column="4" selection-end-line="170" selection-end-column="11" />
-              <folding>
-                <element signature="e#0#51#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myschoolapp/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2108">
-              <caret line="130" column="23" selection-start-line="130" selection-start-column="23" selection-end-line="130" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#24#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myschoolapp/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2278">
-              <caret line="136" column="80" selection-start-line="136" selection-start-column="80" selection-end-line="136" selection-end-column="80" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="noteview.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template/student/noteview.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="26" selection-end-line="45" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scgindex.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template/scgindex.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6953">
-              <caret line="409" column="47" selection-start-line="409" selection-start-column="47" selection-end-line="409" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="addcomplaint.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template/student/addcomplaint.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="6" selection-end-line="17" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="upcomplaint.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template/student/upcomplaint.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="complaintview.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/template/student/complaintview.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="36" column="60" selection-start-line="36" selection-start-column="60" selection-end-line="36" selection-end-column="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="addnote.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template/student/addnote.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="9" selection-end-line="17" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="studentview.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myschoolapp/studentview.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1326">
-              <caret line="81" column="17" lean-forward="true" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#45#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -221,6 +126,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
@@ -230,6 +138,7 @@
     <option name="width" value="677" />
     <option name="height" value="646" />
   </component>
+  <component name="ProjectId" id="2JlgMhBu8GaZ0mlFIl45Al6M1F4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -277,14 +186,19 @@
       <pane id="Scope" />
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "last_opened_file_path": "C:/Users/ADARSH PS/Downloads/myschool/myschool/template/admin"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ADARSH PS\Downloads\myschool\myschool\template\admin" />
+      <recent name="C:\Users\ADARSH PS\Downloads\myschool\myschool\template\teacher" />
       <recent name="C:\Users\User\PycharmProjects\myschool\static\loginstatic" />
       <recent name="C:\Users\User\PycharmProjects\myschool\template\nw" />
       <recent name="C:\Users\User\PycharmProjects\myschool\static" />
@@ -294,18 +208,7 @@
       <recent name="C:\Users\User\PycharmProjects\myschool\template" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -371,8 +274,16 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/template/teacher/addcommunitygroup.html" />
@@ -669,7 +580,7 @@
     <entry file="file://$PROJECT_DIR$/myschoolapp/studentview.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1326">
-          <caret line="81" column="17" lean-forward="true" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="17" />
+          <caret line="81" column="17" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="17" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>

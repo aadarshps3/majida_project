@@ -99,7 +99,7 @@ class communitygroupform(forms.ModelForm):
     department=forms.ChoiceField(choices=dep_choice)
     class Meta:
         model=CommunityGroup
-        fields='__all__'
+        exclude=('status',)
 
 class teacherattendanceform(forms.ModelForm):
 

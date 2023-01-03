@@ -130,6 +130,7 @@ class CommunityGroup(models.Model):
 
     course = models.ForeignKey(Course, on_delete=models.CASCADE)
     department = models.CharField(max_length=200)
+    status = models.IntegerField(default=0)
 
 
 class TeacherAttendance(models.Model):
@@ -173,6 +174,11 @@ class Complaint(models.Model):
     department = models.CharField(max_length=200)
     date = models.DateField(auto_now=True)
     complaint=models.TextField(max_length=10000)
+
+class Appointment(models.Model):
+    user = models.ForeignKey(TeacherLogin, on_delete=models.CASCADE, related_name='appointment')
+    schedule = models.ForeignKey(CommunityGroup, on_delete=models.CASCADE)
+    status = models.IntegerField(default=0)
 
 
 

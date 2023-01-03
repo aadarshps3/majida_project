@@ -1,10 +1,11 @@
 from django.shortcuts import render, redirect
+from django.contrib import messages
 
 import myschool
 from myschoolapp.forms import courseform, syllabusform, timetableform, examtableform, dutyform, examresultform, \
     staffmeetingform, parentsmeetingform, communitygroupform
 from myschoolapp.models import TeacherLogin, Course, Syllabus, TimeTable, ExamTable, Duty, ExamResult, StaffMeeting, \
-    ParentsMeeting, CommunityGroup
+    ParentsMeeting, CommunityGroup,Appointment
 
 
 def teacherview(request):
@@ -278,3 +279,24 @@ def delecommunitygroup(request,id):
 def managecommunitygroup(request):
     data=CommunityGroup.objects.all()
     return render(request,'admin/managecommunitygroup.html',{'data':data})
+
+def appointment_admin(request):
+    a = Appointment.objects.all()
+    context = {
+        'appointment': a,
+    }
+    return render(request, 'admin/appointments.html', context)
+
+def approve_appointment(request, id):
+    a = Appointment.objects.get(id=id)
+    a.status = 1
+    a.save()
+    messages.info(request, 'Appointment  Confirmed')
+    return redirect('appointment_admin')
+
+def reject_appointment(request, id):
+    n = Appointment.objects.get(id=id)
+    n.status = 2
+    n.save()
+    messages.info(request, 'Appointment Rejected')
+    return redirect('appointment_admin')

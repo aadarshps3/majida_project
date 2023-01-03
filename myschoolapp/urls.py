@@ -96,6 +96,9 @@ urlpatterns = [
     path('upcommunitygroup/<int:id>/',adminview.upcommunitygroup,name='upcommunitygroup'),
     path('delecommunitygroup/<int:id>/',adminview.delecommunitygroup,name='delecommunitygroup'),
     path('managecommunitygroup',adminview.managecommunitygroup,name='managecommunitygroup'),
+    path('appointment_admin',adminview.appointment_admin,name='appointment_admin'),
+    path('approve_appointment/<int:id>/',adminview.approve_appointment,name='approve_appointment'),
+    path('reject_appointment/<int:id>/',adminview.reject_appointment,name='reject_appointment'),
 
 
     path('tsyllabusview',teacherview.tsyllabusview,name='tsyllabusview'),
@@ -116,6 +119,8 @@ urlpatterns = [
     path('delemark/<int:id>/',teacherview.delemark,name='delemark'),
 
     path('texamresultview',teacherview.texamresultview,name='texamresultview'),
+    path('join_community/<int:id>/',teacherview.join_community,name='join_community'),
+    path('appointment_view',teacherview.appointment_view,name='appointment_view'),
 
 
     path('ssyllabusview',studentview.ssyllabusview,name='ssyllabusview'),
